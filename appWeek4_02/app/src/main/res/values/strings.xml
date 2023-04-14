@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">appWeek4_02</string>
+    <string name="tv_question">Es Lima Capital de Peru?</string>
+    <string name="bt_answer1">Si</string>
+    <string name="bt_answer2">No</string>
+    <string name="sgt">Next</string>
+</resources>
