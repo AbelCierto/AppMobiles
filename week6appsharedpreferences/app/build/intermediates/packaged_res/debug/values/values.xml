@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">week6-app-shared-preferences</string>
+    <string name="bt_grabar">Grabar</string>
+    <string name="btn_retrieve">RETRIEVE</string>
+    <string name="hint_ingrese_nombre">Ingrese nombre</string>
+    <style name="Base.Theme.Week6appsharedpreferences" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Week6appsharedpreferences" parent="Base.Theme.Week6appsharedpreferences"/>
+</resources>

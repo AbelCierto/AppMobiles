@@ -1,0 +1,22 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnRetrieve
+id btnSave
+id etName
+id textInputLayout
+id tvRetrieve
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string bt_grabar
+string btn_retrieve
+string hint_ingrese_nombre
+style Base.Theme.Week6appsharedpreferences
+style Theme.Week6appsharedpreferences
+xml backup_rules
+xml data_extraction_rules

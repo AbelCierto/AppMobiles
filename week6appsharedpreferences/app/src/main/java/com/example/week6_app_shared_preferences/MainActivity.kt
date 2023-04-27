@@ -3,8 +3,10 @@ package com.example.week6_app_shared_preferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 
 class MainActivity : AppCompatActivity() {
@@ -13,23 +15,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val sharedPreferences = SharedPreferences(this)
-
         val btnSave = findViewById<Button>(R.id.btnSave)
-        val etName = findViewById<TextInputLayout>(R.id.etName)
+        var etName = findViewById<EditText>(R.id.etName)
 
-        btnSave.setOnClickListener() {
+        btnSave.setOnClickListener {
+            val name = etName.text.toString()
 
-            val name = etName.toString()
 
+            //val name = "Hola"
             //grabo el texto en el shared Preferences
             sharedPreferences.save("name", name)
-
             Toast.makeText(this, "Data stored", Toast.LENGTH_LONG).show()
         }
 
         val btnRetrieve = findViewById<Button>(R.id.btnRetrieve)
         val tvRetrieve = findViewById<TextView>(R.id.tvRetrieve)
-        btnRetrieve.setOnClickListener() {
+        btnRetrieve.setOnClickListener {
             if (sharedPreferences.getValue("name" )!= null){
                 tvRetrieve.setText(sharedPreferences.getValue("name"))
             }
